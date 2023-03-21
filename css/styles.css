@@ -1,1 +1,30 @@
-/*# sourceMappingURL=styles.css.map */
+@font-face {
+  font-family: "StratosSkyeng";
+  src: url(../fonts/stratosskyengwebregular.woff) format("woff"), url(../fonts/stratosskyengwebregular.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "StratosSkyeng";
+  src: url(../fonts/stratosskyengwebregular.woff) format("woff"), url(../fonts/stratosskyengwebregular.woff2) format("woff2");
+  font-weight: 500;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "StratosSkyeng", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}/*# sourceMappingURL=styles.css.map */

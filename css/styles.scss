@@ -1,0 +1,24 @@
+@import "vars";
+
+@import "fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'StratosSkyeng', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: $container-width-desktop;
+    padding-left: $container-padding-desktop;
+    padding-right: $container-padding-desktop;
+    margin: 0 auto;
+}
