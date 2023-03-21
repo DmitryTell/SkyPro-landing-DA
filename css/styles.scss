@@ -22,3 +22,164 @@ a {
     padding-right: $container-padding-desktop;
     margin: 0 auto;
 }
+
+.top {
+    min-height: $top-height;
+    padding-top: 12px;
+    padding-bottom: 64px;
+    background: $top-bg;
+
+    &__header {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 24px;
+    }
+    .menu {
+        &__link {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #FFFFFF;
+            transition: all 0.5s;
+
+            &:hover {
+                opacity: 0.6;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__content {
+        margin-bottom: 64px;
+    }
+    .content {
+        &__top-text {
+            height: 140px;
+            padding-top: 30px;
+            background: url(../img/bone.svg) 195px 0px/345px 140px no-repeat;
+            font-weight: 400;
+            font-size: 68px;
+            line-height: 100%;
+            letter-spacing: -0.6px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $top-text-color;
+
+            &--amazing {
+                display: inline-block;
+                transform: rotate(-3deg);
+            }
+        }
+
+        &__title {
+            margin-top: -40px;
+            margin-bottom: 40px;
+            font-weight: 400;
+            font-size: 260px;
+            line-height: 60%;
+            letter-spacing: -0.6px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $top-text-color;
+        }
+
+        &__middle-text {
+            margin-bottom: 27px;
+            padding-top: 21px;
+            font-weight: 400;
+            font-size: 68px;
+            line-height: 100%;
+            letter-spacing: -0.6px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $top-text-color;
+        }
+
+        &__bottom-text {
+            max-width: 848px;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 135%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $top-text-color;
+            position: relative;
+
+            &--colored {
+                display: inline-block;
+                padding-left: 5px;
+            }
+            &--colored-1 {
+                background: url(../img/colored-1.svg) 0px 9px/286px 32px no-repeat;
+            }
+            &--colored-2 {
+                background: url(../img/colored-2.svg) 0px 9px/497px 32px no-repeat;
+            }
+            &--colored-3 {
+                padding-right: 5px;
+                background: url(../img/colored-3.svg) 0px 9px/160px 32px no-repeat;
+            }
+
+            & img {
+                position: absolute;
+                top: 185px;
+                right: 5px;
+            }
+        }
+    }
+
+    &__additional {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .additional {
+        &__button {
+            width: 324px;
+            height: 76px;
+            background: #FCDE00;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: -0.15px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            transition: all 0.5s;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__small {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 145%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #E8BEFC;
+        }
+
+        &__big {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 135%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $top-text-color;
+        }
+    }
+}
