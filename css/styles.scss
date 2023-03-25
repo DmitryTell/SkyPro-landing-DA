@@ -322,3 +322,92 @@ a {
         }
     }
 }
+
+.black {
+    padding-top: $black-padding-top;
+    padding-bottom: $black-padding-bottom;
+    background: $black-bg-color;
+
+    &__title {
+        margin-bottom: 24px;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 100%;
+        letter-spacing: -0.6px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $black-text-color;
+    }
+
+    &__text {
+        max-width: 960px;
+        margin-bottom: 40px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 135%;
+        letter-spacing: -0.05px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $black-text-color;
+    }
+
+    &__checkbox {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    &__checkbox + &__label {
+        user-select: none;
+    }
+    &__checkbox + &__label::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    &__checkbox:checked + &__label::before {
+        background: url(../img/black-checked.svg) center/cover no-repeat;
+    }
+    &__checkbox:not(:disabled):not(:checked) + &__label:hover::before {
+        border: 1px solid $black-checkbox-color;
+    }
+    &__checkbox:not(:disabled):active + &__label::before {
+        border: 1px solid $black-checkbox-color;
+        background: transparent;
+    }
+
+    &__label {
+        color: $black-checkbox-color;
+    }
+
+    &__top-statistic {
+        margin-bottom: 16px;
+        display: flex;
+        gap: 40px;
+    }
+    .top-statistic {
+        &__left {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__right {
+            flex-grow: 1;
+        }
+
+        &__text {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $black-text-color;
+        }
+    }
+
+    &__statistic {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
