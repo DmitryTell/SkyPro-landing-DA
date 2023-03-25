@@ -183,3 +183,142 @@ a {
         }
     }
 }
+
+.teachers {
+    padding-top: $teachers-padding-top;
+    padding-bottom: $teachers-padding-bottom;
+
+    &__title {
+        margin-bottom: 39px;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 100%;
+        letter-spacing: -0.6px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $teachers-text-color;
+    }
+
+    &__box {
+        margin-bottom: 48px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 46px 40px;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 160px auto;
+        gap: 32px;
+    }
+    .item {
+        &__title {
+            font-size: 32px;
+            line-height: 105%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $teachers-text-color;
+        }
+
+        &__position {
+            margin-bottom: 16px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 145%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $teachers-text-color;
+            opacity: 0.3;
+        }
+
+        &__text {
+            margin-bottom: 16px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $teachers-text-color;
+        }
+
+        &__link-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 12px;
+        }
+        
+        &__link {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $teachers-link-button-color;
+            transition: all 0.5s;
+
+            &:hover {
+                opacity: 0.5;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__button {
+        width: 600px;
+        height: 92px;
+        padding-left: 10px;
+        background: transparent;
+        border: 1px solid $teachers-link-button-color;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.15px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $teachers-link-button-color;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .button {
+        &__img-box {
+            position: relative;
+            width: 228px;
+            height: 72px;
+        }
+
+        &__img {
+            position: absolute;
+            top: 0;
+            transition: all 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &--z3 {
+                left: 0;
+                z-index: 3;
+            }
+            &--z2 {
+                left: 52px;
+                z-index: 2;
+            }
+            &--z1 {
+                left: 104px;
+                z-index: 1;
+            }
+            &--z0 {
+                left: 156px;
+            }
+        }
+
+        &__text {
+            transition: all 0.5s;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
