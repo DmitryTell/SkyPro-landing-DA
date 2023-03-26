@@ -392,7 +392,7 @@ a {
         }
 
         &__right {
-            flex-grow: 1;
+            width: 624px;
         }
 
         &__text {
@@ -406,8 +406,120 @@ a {
     }
 
     &__statistic {
+        margin-bottom: 48px;
         display: flex;
         flex-direction: column;
         gap: 16px;
+    }
+    .statistic {
+        &__item {
+            height: 43px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        &__left {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__right {
+            width: 624px;
+            height: 23px;
+            background: #1A1A1A;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 130%;
+            text-align: right;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $black-text-color;
+        }
+
+        .right-min {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        &__right-in {
+            height: 100%;
+            padding-right: 5px;
+            background: #4D4D4D;
+            border-radius: 5px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            &--sql {
+                width: 524px;
+            }
+            &--exel {
+                width: 193px;
+            }
+            &--bi {
+                width: 231px;
+            }
+            &--ms {
+                width: 250px;
+            }
+            &--py {
+                width: 206px;
+            }
+            &--ml {
+                width: 93px;
+            }
+            &--wa {
+                width: 56px;
+            }
+            &--bd {
+                width: 18px;
+            }
+        }
+
+        &__text {
+            flex-grow: 1;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 135%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $black-text-color;
+        }
+
+        &__checkbox > input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+        &__checkbox > span {
+            display: inline-flex;
+            align-items: center;
+            user-select: none;
+        }
+        &__checkbox > span::before {
+            content: '';
+            display: inline-block;
+            width: 23px;
+            height: 23px;
+            margin-right: 8px;
+            background: #1A1A1A;
+            border: 1px solid $black-checkbox-color;
+            border-radius: 5.75px;
+            cursor: pointer;
+        }
+
+        &__checkbox-text {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 135%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $black-checkbox-color;
+        }
     }
 }

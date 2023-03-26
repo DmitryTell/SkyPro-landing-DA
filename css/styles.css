@@ -355,7 +355,7 @@ a {
   justify-content: space-between;
 }
 .black .top-statistic__right {
-  flex-grow: 1;
+  width: 624px;
 }
 .black .top-statistic__text {
   font-weight: 500;
@@ -366,7 +366,111 @@ a {
   color: #FFFFFF;
 }
 .black__statistic {
+  margin-bottom: 48px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.black .statistic__item {
+  height: 43px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.black .statistic__left {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.black .statistic__right {
+  width: 624px;
+  height: 23px;
+  background: #1A1A1A;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: right;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #FFFFFF;
+}
+.black .statistic .right-min {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.black .statistic__right-in {
+  height: 100%;
+  padding-right: 5px;
+  background: #4D4D4D;
+  border-radius: 5px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.black .statistic__right-in--sql {
+  width: 524px;
+}
+.black .statistic__right-in--exel {
+  width: 193px;
+}
+.black .statistic__right-in--bi {
+  width: 231px;
+}
+.black .statistic__right-in--ms {
+  width: 250px;
+}
+.black .statistic__right-in--py {
+  width: 206px;
+}
+.black .statistic__right-in--ml {
+  width: 93px;
+}
+.black .statistic__right-in--wa {
+  width: 56px;
+}
+.black .statistic__right-in--bd {
+  width: 18px;
+}
+.black .statistic__text {
+  flex-grow: 1;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 135%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #FFFFFF;
+}
+.black .statistic__checkbox > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.black .statistic__checkbox > span {
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.black .statistic__checkbox > span::before {
+  content: "";
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin-right: 8px;
+  background: #1A1A1A;
+  border: 1px solid #AD61FF;
+  border-radius: 5.75px;
+  cursor: pointer;
+}
+.black .statistic__checkbox-text {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 135%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #AD61FF;
 }/*# sourceMappingURL=styles.css.map */
