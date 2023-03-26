@@ -552,3 +552,40 @@ a {
         }
     }
 }
+
+.big-block {
+    padding-top: $big-block-padding-top;
+    padding-bottom: $big-block-padding-bottom;
+
+    &__top-section {
+        margin-bottom: 21px;
+    }
+    .top-section {
+        &__title {
+            margin-bottom: 24px;
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 100%;
+            letter-spacing: -0.6px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $big-block-top-title-color;
+        }
+
+        &__text {
+            max-width: 960px;
+            padding-bottom: 40px;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 135%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $big-block-top-text-color;
+
+            &--bg {
+                display: inline-block;
+                background: url(../img/big-top-text-bg.svg) 0px 9px/399px 32px no-repeat,
+                            url(../img/big-top-text-bg.svg) 291px 9px/399px 32px no-repeat;
+            }
+        }
+    }
+}

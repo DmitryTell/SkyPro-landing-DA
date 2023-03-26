@@ -499,4 +499,35 @@ a {
 .black__button:hover {
   transform: scale(1.05);
   box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.4);
+}
+
+.big-block {
+  padding-top: 56px;
+  padding-bottom: 150px;
+}
+.big-block__top-section {
+  margin-bottom: 21px;
+}
+.big-block .top-section__title {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 100%;
+  letter-spacing: -0.6px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #00AEFA;
+}
+.big-block .top-section__text {
+  max-width: 960px;
+  padding-bottom: 40px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 135%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.big-block .top-section__text--bg {
+  display: inline-block;
+  background: url(../img/big-top-text-bg.svg) 0px 9px/399px 32px no-repeat, url(../img/big-top-text-bg.svg) 291px 9px/399px 32px no-repeat;
 }/*# sourceMappingURL=styles.css.map */
