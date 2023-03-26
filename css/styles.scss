@@ -588,4 +588,73 @@ a {
             }
         }
     }
+
+    &__paintings {
+        max-width: $container-width-desktop;
+        min-height: 306px;
+        margin: 0 auto 67px;
+        display: grid;
+        grid-template-columns: 306px 275px 260px 260px;
+        justify-content: space-between;
+    }
+    .paintings {
+        &__first {
+            background: url(../img/big-paintings-first.svg) center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &-text {
+                width: 260px;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 135%;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #D27714;
+                text-align: center;
+            }
+        }
+
+        &__second {
+            padding-left: 10px;
+            background: url(../img/big-paintings-second.svg) center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 5px;
+
+            &-text {
+                width: 260px;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 135%;
+                display: flex;
+                align-items: center;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #1797CC;
+            }
+            &-link {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 130%;
+                letter-spacing: -0.05px;
+                text-decoration-line: underline;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #1797CC;
+                text-decoration: underline;
+                transition: all 0.5s;
+
+                &:hover {
+                    text-decoration: none;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
 }

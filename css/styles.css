@@ -530,4 +530,66 @@ a {
 .big-block .top-section__text--bg {
   display: inline-block;
   background: url(../img/big-top-text-bg.svg) 0px 9px/399px 32px no-repeat, url(../img/big-top-text-bg.svg) 291px 9px/399px 32px no-repeat;
+}
+.big-block__paintings {
+  max-width: 1200px;
+  min-height: 306px;
+  margin: 0 auto 67px;
+  display: grid;
+  grid-template-columns: 306px 275px 260px 260px;
+  justify-content: space-between;
+}
+.big-block .paintings__first {
+  background: url(../img/big-paintings-first.svg) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.big-block .paintings__first-text {
+  width: 260px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 135%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #D27714;
+  text-align: center;
+}
+.big-block .paintings__second {
+  padding-left: 10px;
+  background: url(../img/big-paintings-second.svg) center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+.big-block .paintings__second-text {
+  width: 260px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 135%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #1797CC;
+}
+.big-block .paintings__second-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.05px;
+  text-decoration-line: underline;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #1797CC;
+  text-decoration: underline;
+  transition: all 0.5s;
+}
+.big-block .paintings__second-link:hover {
+  text-decoration: none;
+  opacity: 0.5;
 }/*# sourceMappingURL=styles.css.map */
