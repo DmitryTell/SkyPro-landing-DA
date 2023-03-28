@@ -721,4 +721,10 @@ a {
             }
         }
     }
+
+    &__form {
+        margin-bottom: 120px;
+        padding: $big-block-form-padding;
+        background: $big-block-form-bg;
+    }
 }
