@@ -563,12 +563,19 @@ a {
     .top-section {
         &__title {
             margin-bottom: 24px;
+            background: url(../img/logo-big-top.svg) 258px 16px/392px 60px no-repeat;
             font-weight: 400;
             font-size: 72px;
             line-height: 100%;
             letter-spacing: -0.6px;
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: $big-block-top-title-color;
+
+            &--logo-section {
+                display: inline-block;
+                width: 392px;
+                height: 60px;
+            }
         }
 
         &__text {
@@ -594,12 +601,12 @@ a {
         min-height: 306px;
         margin: 0 auto 67px;
         display: grid;
-        grid-template-columns: 306px 275px 260px 260px;
+        grid-template-columns: repeat(4, 300px);
         justify-content: space-between;
     }
     .paintings {
         &__first {
-            background: url(../img/big-paintings-first.svg) center/cover no-repeat;
+            background: url(../img/big-paintings-first.svg) center/300px 300px no-repeat;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -620,8 +627,8 @@ a {
         }
 
         &__second {
-            padding-left: 10px;
-            background: url(../img/big-paintings-second.svg) center/cover no-repeat;
+            padding-left: 30px;
+            background: url(../img/big-paintings-second.svg) center/300px 300px no-repeat;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -639,6 +646,7 @@ a {
                 font-feature-settings: 'pnum' on, 'lnum' on;
                 color: #1797CC;
             }
+
             &-link {
                 font-weight: 400;
                 font-size: 18px;
@@ -648,11 +656,67 @@ a {
                 font-feature-settings: 'pnum' on, 'lnum' on;
                 color: #1797CC;
                 text-decoration: underline;
+                opacity: 0.5;
                 transition: all 0.5s;
 
                 &:hover {
                     text-decoration: none;
-                    opacity: 0.5;
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__third {
+            background: url(../img/big-paintings-third.svg) center/300px 300px no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &-text {
+                width: 250px;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 135%;
+                text-align: center;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #14A34C;
+            }
+        }
+
+        &__fourth {
+            background: url(../img/big-paintings-fourth.svg) center/300px 300px no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            &-text {
+                width: 240px;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 135%;
+                text-align: center;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #A339C0;
+            }
+
+            &-link {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 130%;
+                letter-spacing: -0.05px;
+                text-decoration-line: underline;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #A339C0;
+                opacity: 0.5;
+                transition: all 0.5s;
+
+                &:hover {
+                    text-decoration: none;
+                    opacity: 1;
                 }
             }
         }
