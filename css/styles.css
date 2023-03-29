@@ -653,4 +653,80 @@ a {
   margin-bottom: 120px;
   padding: 32px 40px;
   background: #ECECEC;
+  border-radius: 20px;
+}
+.big-block .form__content {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.big-block .form__title {
+  font-size: 40px;
+  line-height: 125%;
+  letter-spacing: -0.6px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.big-block .form__text {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 135%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.big-block .form__fields {
+  height: 48px;
+  margin-bottom: 11px;
+  display: grid;
+  grid-template-columns: repeat(3, auto) 264px;
+  gap: 8px;
+}
+.big-block .form__input {
+  padding-left: 12px;
+  padding-right: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.big-block .form__input::-moz-placeholder {
+  color: #000000;
+}
+.big-block .form__input::placeholder {
+  color: #000000;
+}
+.big-block .form__button {
+  background: #FCDE00;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  transition: all 0.5s;
+}
+.big-block .form__button:hover {
+  opacity: 0.5;
+}
+.big-block .form__subtext {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  opacity: 0.5;
 }/*# sourceMappingURL=styles.css.map */
