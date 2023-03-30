@@ -759,7 +759,7 @@ a {
             height: 48px;
             margin-bottom: 11px;
             display: grid;
-            grid-template-columns: repeat(3, auto) 264px;
+            grid-template-columns: repeat(4, 1fr);
             gap: 8px;
         }
 
@@ -808,6 +808,107 @@ a {
             font-feature-settings: 'pnum' on, 'lnum' on;
             color: $big-block-form-text-color;
             opacity: 0.5;
+        }
+    }
+
+    &__title {
+        margin-bottom: 64px;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 100%;
+        letter-spacing: -0.6px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $big-block-learning-text-color;
+    }
+
+    &__learning {
+        margin-bottom: 120px;
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+    }
+    .learning {
+        &__workshops {
+            padding: 32px 32px 0 40px;
+            background: $big-block-learning-bg-additional;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: 1fr 728px;
+        }
+        .workshops {
+            &__video-container {
+                height: 428px;
+                background: url(../img/workshops-video-bg.png) center/cover no-repeat;
+                box-shadow: 0px 7px 16px -4px rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__video-play {
+                background: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        &__six-workshops {
+            width: 143px;
+            height: 182px;
+            padding-left: 23px;
+            padding-right: 23px;
+            background: #AD61FF;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transform: rotate(-5deg);
+        }
+        .six-workshops {
+            &__six {
+                font-weight: 400;
+                font-size: 96px;
+                line-height: 100%;
+                letter-spacing: -0.6px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #FFFFFF;
+            }
+
+            &__text {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 130%;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #FFFFFF;
+            }
+        }
+
+        &__title {
+            margin-bottom: 16px;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 135%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $big-block-learning-text-color;
+        }
+
+        &__text {
+            width: 360px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 145%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $big-block-learning-text-color;
+
+            &--ws {
+                width: 319px;
+                margin-bottom: 4px;
+                padding-bottom: 36px;
+            }
         }
     }
 }

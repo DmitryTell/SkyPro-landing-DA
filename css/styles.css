@@ -1,3 +1,11 @@
+/*Container*/
+/*Top*/
+/*Teachers*/
+/*Black*/
+/*Big-block*/
+/*Big-block-->Top*/
+/*Big-block-->Form*/
+/*Big-block-->Learning*/
 @font-face {
   font-family: "StratosSkyeng";
   src: url(../fonts/stratosskyengwebregular.woff) format("woff"), url(../fonts/stratosskyengwebregular.woff2) format("woff2");
@@ -682,7 +690,7 @@ a {
   height: 48px;
   margin-bottom: 11px;
   display: grid;
-  grid-template-columns: repeat(3, auto) 264px;
+  grid-template-columns: repeat(4, 1fr);
   gap: 8px;
 }
 .big-block .form__input {
@@ -729,4 +737,91 @@ a {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
   opacity: 0.5;
+}
+.big-block__title {
+  margin-bottom: 64px;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 100%;
+  letter-spacing: -0.6px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.big-block__learning {
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.big-block .learning__workshops {
+  padding: 32px 32px 0 40px;
+  background: #F9EBFF;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 728px;
+}
+.big-block .learning .workshops__video-container {
+  height: 428px;
+  background: url(../img/workshops-video-bg.png) center/cover no-repeat;
+  box-shadow: 0px 7px 16px -4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.big-block .learning .workshops__video-play {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.big-block .learning__six-workshops {
+  width: 143px;
+  height: 182px;
+  padding-left: 23px;
+  padding-right: 23px;
+  background: #AD61FF;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: rotate(-5deg);
+}
+.big-block .learning .six-workshops__six {
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 100%;
+  letter-spacing: -0.6px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #FFFFFF;
+}
+.big-block .learning .six-workshops__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #FFFFFF;
+}
+.big-block .learning__title {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 135%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.big-block .learning__text {
+  width: 360px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.big-block .learning__text--ws {
+  width: 319px;
+  margin-bottom: 4px;
+  padding-bottom: 36px;
 }/*# sourceMappingURL=styles.css.map */
