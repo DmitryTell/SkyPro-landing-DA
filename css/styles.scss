@@ -553,6 +553,7 @@ a {
 }
 
 .big-block {
+    margin-bottom: 150px;
     padding-top: $big-block-padding-top;
     padding-bottom: $big-block-padding-bottom;
 
@@ -811,7 +812,7 @@ a {
     }
 
     &__title {
-        margin-bottom: 64px;
+        margin-bottom: 48px;
         font-weight: 400;
         font-size: 72px;
         line-height: 100%;
@@ -821,6 +822,7 @@ a {
     }
 
     &__learning {
+        margin-top: 16px;
         margin-bottom: 120px;
         display: flex;
         flex-direction: column;
@@ -838,7 +840,6 @@ a {
             &__video-container {
                 height: 428px;
                 background: url(../img/workshops-video-bg.png) center/cover no-repeat;
-                box-shadow: 0px 7px 16px -4px rgba(0, 0, 0, 0.2);
                 border-radius: 5px;
                 display: flex;
                 justify-content: center;
@@ -905,6 +906,64 @@ a {
                 justify-content: center;
                 align-items: center;
             }
+
+            &__button {
+                @extend .workshops__video-play;
+            }
+
+            &__link-points {
+                display: flex;
+                gap: 16px;
+            }
+        }
+
+        &__homework {
+            margin-bottom: 16px;
+            display: grid;
+            grid-template-columns: 1fr 760px;
+            gap: 40px;
+        }
+        .homework {
+            &__screenshots {
+                height: 628px;
+                position: relative;
+            }
+
+            &__screenshot {
+                position: absolute;
+                border-radius: 5px;
+
+                &--z0 {
+                    top: 0;
+                    right: 0;
+                }
+
+                &--z1 {
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        &__feedback {
+            margin-bottom: 7px;
+            display: grid;
+            grid-template-columns: 760px 1fr;
+            gap: 40px;
+        }
+        .feedback {
+            &__content {
+                position: relative;
+            }
+
+            &__crown {
+                position: absolute;
+                top: 454px;
+                left: -16px;
+                width: 139px;
+                height: 90px;
+                background: url(../img/feedback-crown.svg) center no-repeat;
+            }
         }
 
         &__title {
@@ -930,6 +989,69 @@ a {
                 width: 319px;
                 margin-bottom: 4px;
                 padding-bottom: 36px;
+            }
+
+            &--hw {
+                margin-top: 16px;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 135%;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #AD61FF;
+            }
+
+            &--fb {
+                width: 252px;
+                margin-top: 127px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 145%;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #00A665;
+            }
+        }
+
+        &__coursework {
+            padding: 32px 72px 48px 40px;
+            background: #F9EBFF;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: 1fr 688px;
+            gap: 48px;
+        }
+        .coursework {
+            &__title {
+                font-size: 40px;
+                line-height: 125%;
+                letter-spacing: -0.6px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $big-block-learning-text-color;
+            }
+
+            &__text-box {
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+            }
+
+            &__text {
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 135%;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $big-block-learning-text-color;
+
+                &--colored-1 {
+                    background: url(../img/coursework-text-colored-1.svg) 367px 139px no-repeat;
+                }
+
+                &--colored-2 {
+                    background: url(../img/coursework-text-colored-2.svg) 370px 139px no-repeat,
+                                url(../img/coursework-text-colored-3.svg) 0 181px no-repeat;
+                }
             }
         }
     }
