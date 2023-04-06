@@ -6,6 +6,7 @@
 /*Big-block-->Top*/
 /*Big-block-->Form*/
 /*Big-block-->Learning*/
+/*Big-block-->Teachers*/
 @font-face {
   font-family: "StratosSkyeng";
   src: url(../fonts/stratosskyengwebregular.woff) format("woff"), url(../fonts/stratosskyengwebregular.woff2) format("woff2");
@@ -509,7 +510,6 @@ a {
 }
 
 .big-block {
-  margin-bottom: 150px;
   padding-top: 56px;
   padding-bottom: 150px;
 }
@@ -939,4 +939,30 @@ a {
 }
 .big-block .learning .coursework__text--colored-2 {
   background: url(../img/coursework-text-colored-2.svg) 370px 139px no-repeat, url(../img/coursework-text-colored-3.svg) 0 181px no-repeat;
+}
+.big-block__teachers {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 40px;
+}
+.big-block .teacher__box {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+.big-block .teacher__item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 40px;
+}
+.big-block .teacher__content {
+  display: flex;
+  flex-direction: column;
+}
+.big-block .teacher .content__name {
+  font-size: 40px;
+  line-height: 125%;
+  letter-spacing: -0.6px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
 }/*# sourceMappingURL=styles.css.map */
