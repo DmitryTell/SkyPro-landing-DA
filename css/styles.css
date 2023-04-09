@@ -965,4 +965,140 @@ a {
   letter-spacing: -0.6px;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
+}
+.big-block .teacher .content__position {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  opacity: 0.3;
+}
+.big-block .teacher .content__text {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 135%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.big-block .teacher .content__text--link {
+  color: #FF6D00;
+  transition: all 0.5s;
+}
+.big-block .teacher .content__text--link:hover {
+  opacity: 0.5;
+  text-decoration: underline;
+}
+.big-block .teacher .content__link-box {
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+.big-block .teacher .content__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #FF6D00;
+  transition: all 0.5s;
+}
+.big-block .teacher .content__link:hover {
+  opacity: 0.5;
+  text-decoration: underline;
+}
+.big-block .teacher .content__link--lock {
+  padding-left: 20px;
+  background: url(../img/teachers-lock.svg) 0 5px no-repeat;
+}
+.big-block .teacher__form {
+  height: 542px;
+  padding: 32px 40px 40px;
+  background: #ECECEC;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.big-block .teacher .teach-form__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 135%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.big-block .teacher .teach-form__text {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.big-block .teacher .teach-form__inputs-button {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.big-block .teacher .teach-form__input {
+  height: 48px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.big-block .teacher .teach-form__input::-moz-placeholder {
+  color: #000000;
+}
+.big-block .teacher .teach-form__input::placeholder {
+  color: #000000;
+}
+.big-block .teacher .teach-form__button {
+  height: 51px;
+  background: #FCDE00;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  transition: all 0.5s;
+}
+.big-block .teacher .teach-form__button:hover {
+  opacity: 0.5;
+}
+.big-block .teacher .teach-form__terms-of-use {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.big-block .teacher .teach-form__terms-of-use--link {
+  text-decoration: underline;
+  transition: all 0.5s;
+}
+.big-block .teacher .teach-form__terms-of-use--link:hover {
+  opacity: 0.5;
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */
