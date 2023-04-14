@@ -1295,6 +1295,79 @@ a {
     &__content {
         max-width: 960px;
         margin: 0 auto;
+        padding: 32px 100px 48px 40px;
         background: #FFFFFF;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+    }
+    .content-block {
+        &__item {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 40px;
+        }
+
+        &__right-text {
+            font-size: 32px;
+            line-height: 135%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $employing-text-color;
+        }
+
+        &__title {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 135%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $employing-text-color;
+        }
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &__text-box {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 145%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $employing-text-color;
+        }
+
+        &__right-bottom {
+            font-size: 32px;
+            line-height: 135%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $employing-purple-text-color;
+        }
+
+        &__left-bottom {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 135%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $employing-purple-text-color;
+        }
+    }
+
+    &__matveev {
+        position: absolute;
+        top: 152px;
+        right: 168px;
     }
 }

@@ -1151,5 +1151,68 @@ a {
 .employing__content {
   max-width: 960px;
   margin: 0 auto;
+  padding: 32px 100px 48px 40px;
   background: #FFFFFF;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+.employing .content-block__item {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+}
+.employing .content-block__right-text {
+  font-size: 32px;
+  line-height: 135%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.employing .content-block__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 135%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.employing .content-block__left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.employing .content-block__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.employing .content-block__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.employing .content-block__right-bottom {
+  font-size: 32px;
+  line-height: 135%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #6000C7;
+}
+.employing .content-block__left-bottom {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 135%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #6000C7;
+}
+.employing__matveev {
+  position: absolute;
+  top: 152px;
+  right: 168px;
 }/*# sourceMappingURL=styles.css.map */
