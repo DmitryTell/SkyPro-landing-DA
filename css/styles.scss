@@ -1243,7 +1243,6 @@ a {
 }
 
 .employing {
-    position: relative;
     padding-top: $employing-padding-top;
     padding-bottom: $employing-padding-bottom;
     background: $employing-bg-color;
@@ -1260,6 +1259,7 @@ a {
     }
 
     &__quote {
+        position: relative;
         margin-bottom: 56px;
         display: flex;
         align-items: start;
@@ -1367,7 +1367,126 @@ a {
 
     &__matveev {
         position: absolute;
-        top: 152px;
-        right: 168px;
+        top: -169px;
+        right: 74px;
+    }
+}
+
+.program {
+    padding-top: $program-padding-top;
+    padding-bottom: $program-padding-bottom;
+
+    &__heading {
+        margin-bottom: 79px;
+        display: grid;
+        grid-template-columns: 660px 1fr;
+    }
+    .heading {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 38px;
+        }
+
+        &__title {
+            width: 585px;
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 100%;
+            letter-spacing: -0.6px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            display: flex;
+            flex-direction: column;
+
+            &--black {
+                color: $program-text-color;
+            }
+
+            &--purple {
+                color: $program-text-color-purple-light;
+            }
+        }
+
+        &__graduate {
+            padding: 24px 32px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 18px;
+            background: #F9EBFF;
+            border-radius: 20px;
+        }
+        .graduate {
+            &__title {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 130%;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $program-text-color-purple;
+            }
+
+            &__list {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            &__item {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 130%;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $program-text-color-purple;
+                display: grid;
+                grid-template-columns: auto 492px;
+                gap: 18px;
+            }
+
+            &__before {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 130%;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+            }
+        }
+
+        &__graphica {
+            position: relative;
+        }
+        .graphica {
+            &__absolute {
+                position: absolute;
+            }
+
+            &__bi {
+                top: -50px;
+                left: 73px;
+            }
+
+            &__statistic {
+                top: 50px;
+                left: 124px;
+            }
+
+            &__exel {
+                bottom: 0;
+            }
+
+            &__web-analitics {
+                bottom: 0;
+            }
+
+            &__sql {
+                bottom: 0;
+            }
+
+            &__python {
+                bottom: 0;
+            }
+        }
     }
 }

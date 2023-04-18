@@ -1106,7 +1106,6 @@ a {
 }
 
 .employing {
-  position: relative;
   padding-top: 56px;
   padding-bottom: 64px;
   background: #F9EBFF;
@@ -1122,6 +1121,7 @@ a {
   color: #6000C7;
 }
 .employing__quote {
+  position: relative;
   margin-bottom: 56px;
   display: flex;
   align-items: start;
@@ -1214,6 +1214,104 @@ a {
 }
 .employing__matveev {
   position: absolute;
-  top: 152px;
-  right: 168px;
+  top: -169px;
+  right: 74px;
+}
+
+.program {
+  padding-top: 153px;
+  padding-bottom: 64px;
+}
+.program__heading {
+  margin-bottom: 79px;
+  display: grid;
+  grid-template-columns: 660px 1fr;
+}
+.program .heading__content {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+.program .heading__title {
+  width: 585px;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 100%;
+  letter-spacing: -0.6px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  display: flex;
+  flex-direction: column;
+}
+.program .heading__title--black {
+  color: #000000;
+}
+.program .heading__title--purple {
+  color: #AD61FF;
+}
+.program .heading__graduate {
+  padding: 24px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 18px;
+  background: #F9EBFF;
+  border-radius: 20px;
+}
+.program .heading .graduate__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #6000C7;
+}
+.program .heading .graduate__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.program .heading .graduate__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #6000C7;
+  display: grid;
+  grid-template-columns: auto 492px;
+  gap: 18px;
+}
+.program .heading .graduate__before {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.program .heading__graphica {
+  position: relative;
+}
+.program .heading .graphica__absolute {
+  position: absolute;
+}
+.program .heading .graphica__bi {
+  top: -50px;
+  left: 73px;
+}
+.program .heading .graphica__statistic {
+  top: 50px;
+  left: 124px;
+}
+.program .heading .graphica__exel {
+  bottom: 0;
+}
+.program .heading .graphica__web-analitics {
+  bottom: 0;
+}
+.program .heading .graphica__sql {
+  bottom: 0;
+}
+.program .heading .graphica__python {
+  bottom: 0;
 }/*# sourceMappingURL=styles.css.map */
