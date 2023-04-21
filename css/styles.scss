@@ -1473,20 +1473,153 @@ a {
             }
 
             &__exel {
-                bottom: 0;
+                top: 220px;
+                left: 51px;
             }
 
             &__web-analitics {
-                bottom: 0;
+                top: 228px;
+                left: 2px;
             }
 
             &__sql {
-                bottom: 0;
+                bottom: 81px;
+                left: 264px;
             }
 
             &__python {
-                bottom: 0;
+                bottom: -12px;
+                left: 225px;
             }
+        }
+    }
+
+    &__courses {
+        margin-bottom: 59px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .courses {
+        &__item {
+            display: grid;
+            grid-template-columns: 460px 560px;
+            gap: 140px;
+        }
+
+        &__course {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+
+        &__course-number {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $program-text-color-purple-light;
+        }
+
+        &__title {
+            font-size: 40px;
+            line-height: 125%;
+            letter-spacing: -0.6px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $program-text-color;
+        }
+
+        &__moduls {
+           display: flex;
+           flex-direction: column;
+           gap: 18px; 
+        }
+
+        &__module-item {
+            display: flex;
+            gap: 18px;
+        }
+
+        &__module-number {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $program-text-color;
+            opacity: 0.4;
+        }
+
+        &__module-description {
+            @extend .courses__module-number;
+            opacity: 1;
+            width: 460px;
+        }
+
+        &__floating-block-1 {
+            position: absolute;
+            bottom: 5px;
+            width: 256px;
+            height: 228px;
+            padding: 16px 0px 24px 24px;
+            background: #F9EBFF;
+            border-radius: 20px;
+            transform: rotate(-5deg);
+        }
+
+        &__percent {
+            font-weight: 400;
+            font-size: 96px;
+            line-height: 100%;
+            letter-spacing: -0.6px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $program-text-color;
+        }
+
+        &__floating-text {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $program-text-color;
+
+            &--purple {
+                color: $program-text-color-purple-light;
+            }
+        }
+
+        &__line {
+            width: 560px;
+            height: 1px;
+            background: #000000;
+            opacity: 0.2;
+            align-self: end;
+        }
+
+        &__floating-block-2 {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 339px;
+            height: 80px;
+            background: #AD61FF;
+            border-radius: 900px;
+            transform: rotate(11deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__floating-text-2 {
+            font-weight: 500;
+            font-size: 33px;
+            line-height: 85%;
+            text-align: center;
+            color: $program-text-color-white;
         }
     }
 }
