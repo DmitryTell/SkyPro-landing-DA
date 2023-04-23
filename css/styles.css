@@ -659,7 +659,7 @@ a {
   text-decoration: none;
   opacity: 1;
 }
-.big-block__form {
+.big-block__form, .program__form {
   margin-bottom: 120px;
   padding: 32px 40px;
   background: #ECECEC;
@@ -1429,4 +1429,132 @@ a {
   line-height: 85%;
   text-align: center;
   color: #FFFFFF;
+}
+.program .courses__floating-text-wow {
+  position: absolute;
+  bottom: -50px;
+  right: 25px;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 85%;
+  text-align: center;
+  color: #FFFFFF;
+  transform: rotate(31deg);
+  z-index: 1;
+}
+.program .courses__floating-img-wow {
+  position: absolute;
+  bottom: -89px;
+  right: -2px;
+}
+.program .courses__floating-block-python {
+  position: absolute;
+  top: 165px;
+  left: 0;
+  width: 214px;
+  height: 182px;
+  padding: 16px 0px 24px 24px;
+  background: #F9EBFF;
+  border-radius: 20px;
+  transform: rotate(5deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.program .courses__floating-big-text {
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 100%;
+  letter-spacing: -0.6px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.program .courses__floating-small-text {
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.program .courses__floating-small-text--purple {
+  color: #AD61FF;
+}
+.program__form {
+  margin-bottom: 0;
+}
+.program .form__content {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.program .form__title {
+  font-size: 40px;
+  line-height: 125%;
+  letter-spacing: -0.6px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.program .form__text {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 135%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.program .form__fields {
+  height: 48px;
+  margin-bottom: 11px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.program .form__input {
+  padding-left: 12px;
+  padding-right: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.program .form__input::-moz-placeholder {
+  color: #000000;
+}
+.program .form__input::placeholder {
+  color: #000000;
+}
+.program .form__button {
+  background: #FCDE00;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  transition: all 0.5s;
+}
+.program .form__button:hover {
+  opacity: 0.5;
+}
+.program .form__subtext {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+  opacity: 0.5;
 }/*# sourceMappingURL=styles.css.map */
