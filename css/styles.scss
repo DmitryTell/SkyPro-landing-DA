@@ -1243,7 +1243,6 @@ a {
 }
 
 .employing {
-    position: relative;
     padding-top: $employing-padding-top;
     padding-bottom: $employing-padding-bottom;
     background: $employing-bg-color;
@@ -1260,6 +1259,7 @@ a {
     }
 
     &__quote {
+        position: relative;
         margin-bottom: 56px;
         display: flex;
         align-items: start;
@@ -1367,7 +1367,402 @@ a {
 
     &__matveev {
         position: absolute;
-        top: 152px;
-        right: 168px;
+        top: -169px;
+        right: 74px;
+    }
+}
+
+.program {
+    padding-top: $program-padding-top;
+    padding-bottom: $program-padding-bottom;
+
+    &__heading {
+        margin-bottom: 79px;
+        display: grid;
+        grid-template-columns: 660px 1fr;
+    }
+    .heading {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 38px;
+        }
+
+        &__title {
+            width: 585px;
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 100%;
+            letter-spacing: -0.6px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            display: flex;
+            flex-direction: column;
+
+            &--black {
+                color: $program-text-color;
+            }
+
+            &--purple {
+                color: $program-text-color-purple-light;
+            }
+        }
+
+        &__graduate {
+            padding: 24px 32px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 18px;
+            background: #F9EBFF;
+            border-radius: 20px;
+        }
+        .graduate {
+            &__title {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 130%;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $program-text-color-purple;
+            }
+
+            &__list {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            &__item {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 130%;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $program-text-color-purple;
+                display: grid;
+                grid-template-columns: auto 492px;
+                gap: 18px;
+            }
+
+            &__before {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 130%;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+            }
+        }
+
+        &__graphica {
+            position: relative;
+        }
+        .graphica {
+            &__absolute {
+                position: absolute;
+            }
+
+            &__bi {
+                top: -50px;
+                left: 73px;
+            }
+
+            &__statistic {
+                top: 50px;
+                left: 124px;
+            }
+
+            &__exel {
+                top: 220px;
+                left: 51px;
+            }
+
+            &__web-analitics {
+                top: 228px;
+                left: 2px;
+            }
+
+            &__sql {
+                bottom: 81px;
+                left: 264px;
+            }
+
+            &__python {
+                bottom: -12px;
+                left: 225px;
+            }
+        }
+    }
+
+    &__courses {
+        margin-bottom: 59px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .courses {
+        &__item {
+            display: grid;
+            grid-template-columns: 460px 560px;
+            gap: 140px;
+        }
+
+        &__course {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+        }
+
+        &__course-number {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $program-text-color-purple-light;
+        }
+
+        &__title {
+            font-size: 40px;
+            line-height: 125%;
+            letter-spacing: -0.6px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $program-text-color;
+        }
+
+        &__moduls {
+           display: flex;
+           flex-direction: column;
+           gap: 18px; 
+        }
+
+        &__module-item {
+            display: flex;
+            gap: 18px;
+        }
+
+        &__module-number {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $program-text-color;
+            opacity: 0.4;
+        }
+
+        &__module-description {
+            @extend .courses__module-number;
+            opacity: 1;
+            width: 460px;
+        }
+
+        &__floating-block-1 {
+            position: absolute;
+            bottom: 5px;
+            width: 256px;
+            height: 228px;
+            padding: 16px 0px 24px 24px;
+            background: #F9EBFF;
+            border-radius: 20px;
+            transform: rotate(-5deg);
+        }
+
+        &__percent {
+            font-weight: 400;
+            font-size: 96px;
+            line-height: 100%;
+            letter-spacing: -0.6px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $program-text-color;
+        }
+
+        &__floating-text {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $program-text-color;
+
+            &--purple {
+                color: $program-text-color-purple-light;
+            }
+        }
+
+        &__line {
+            width: 560px;
+            height: 1px;
+            background: #000000;
+            opacity: 0.2;
+            align-self: end;
+        }
+
+        &__floating-block-2 {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 339px;
+            height: 80px;
+            background: #AD61FF;
+            border-radius: 900px;
+            transform: rotate(11deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__floating-text-2 {
+            font-weight: 500;
+            font-size: 33px;
+            line-height: 85%;
+            text-align: center;
+            color: $program-text-color-white;
+        }
+
+        &__floating-text-wow {
+            position: absolute;
+            bottom: -50px;
+            right: 25px;
+            font-weight: 400;
+            font-size: 33px;
+            line-height: 85%;
+            text-align: center;
+            color: $program-text-color-white;
+            transform: rotate(31deg);
+            z-index: 1;
+        }
+
+        &__floating-img-wow {
+            position: absolute;
+            bottom: -89px;
+            right: -2px;
+        }
+
+        &__floating-block-python {
+            position: absolute;
+            top: 165px;
+            left: 0;
+            width: 214px;
+            height: 182px;
+            padding: 16px 0px 24px 24px;
+            background: #F9EBFF;
+            border-radius: 20px;
+            transform: rotate(5deg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+        &__floating-big-text {
+            font-weight: 400;
+            font-size: 96px;
+            line-height: 100%;
+            letter-spacing: -0.6px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $program-text-color;
+        }
+
+        &__floating-small-text {
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $program-text-color;
+
+            &--purple {
+                color: $program-text-color-purple-light;
+            }
+        }
+    }
+
+    &__form {
+       @extend .big-block__form;
+       margin-bottom: 0; 
+    }
+    .form {
+        &__content {
+            margin-bottom: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        &__title {
+            font-size: 40px;
+            line-height: 125%;
+            letter-spacing: -0.6px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $big-block-form-text-color;
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 135%;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $big-block-form-text-color;
+        }
+
+        &__fields {
+            height: 48px;
+            margin-bottom: 11px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+
+        &__input {
+            padding-left: 12px;
+            padding-right: 12px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 145%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $big-block-form-text-color;
+
+            &::placeholder {
+                color: $big-block-form-text-color;
+            }
+        }
+
+        &__button {
+            background: #FCDE00;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            text-align: center;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $big-block-form-text-color;
+            transition: all 0.5s;
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+
+        &__subtext {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 145%;
+            letter-spacing: -0.05px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: $big-block-form-text-color;
+            opacity: 0.5;
+        }
     }
 }
