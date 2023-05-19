@@ -1766,3 +1766,160 @@ a {
         }
     }
 }
+
+.feedbacks {
+    padding-top: $feedbacks-padding-top;
+    padding-bottom: $feedbacks-padding-bottom;
+    background: $feedbacks-bg-color;
+
+    &__title {
+        margin-bottom: 48px;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 100%;
+        letter-spacing: -0.6px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: $feedbacks-text-color-purple;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+    .left {
+        &__item {
+            display: flex;
+            align-items: start;
+            gap: 16px;
+        }
+
+        &__text-block {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .block {
+            &__text {
+                font-weight: 400;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $feedbacks-text-color-black;
+
+                &--big {
+                    font-size: 24px;
+                    line-height: 135%;
+                }
+                &--small {
+                    font-size: 18px;
+                    line-height: 130%;
+                }
+                &--position {
+                    font-size: 18px;
+                    line-height: 130%;
+                    color: $feedbacks-text-color-purple-light;
+                }
+            }
+
+            &__student {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            &__student-info {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 130%;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $feedbacks-text-color-black;
+            }
+
+            &__student-contact {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 130%;
+                letter-spacing: -0.05px;
+                text-decoration-line: underline;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $feedbacks-text-color-orange;
+                transition: all 0.5s;
+
+                &:hover {
+                    text-decoration: none;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+
+    &__right {
+        @extend .feedbacks__left;
+        gap: 48px;
+    }
+    .right {
+        &__item {
+            @extend .left__item;
+        }
+
+        &__text-block {
+            @extend .left__text-block;
+        }
+
+        .block {
+            &__text {
+                font-weight: 400;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $feedbacks-text-color-black;
+
+                &--big {
+                    font-size: 24px;
+                    line-height: 135%;
+                }
+                &--small {
+                    font-size: 18px;
+                    line-height: 130%;
+                }
+            }
+
+            &__student {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            &__student-info {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 130%;
+                letter-spacing: -0.05px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $feedbacks-text-color-black;
+            }
+
+            &__student-contact {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 130%;
+                letter-spacing: -0.05px;
+                text-decoration-line: underline;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: $feedbacks-text-color-orange;
+                transition: all 0.5s;
+
+                &:hover {
+                    text-decoration: none;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}

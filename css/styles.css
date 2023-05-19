@@ -9,6 +9,7 @@
 /*Big-block-->Teachers*/
 /*Employing*/
 /*Program*/
+/*Feedbacks*/
 @font-face {
   font-family: "StratosSkyeng";
   src: url(../fonts/stratosskyengwebregular.woff) format("woff"), url(../fonts/stratosskyengwebregular.woff2) format("woff2");
@@ -1556,5 +1557,130 @@ a {
   letter-spacing: -0.05px;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #000000;
+  opacity: 0.5;
+}
+
+.feedbacks {
+  padding-top: 56px;
+  padding-bottom: 88px;
+  background: #F9EBFF;
+}
+.feedbacks__title {
+  margin-bottom: 48px;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 100%;
+  letter-spacing: -0.6px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #6000C7;
+}
+.feedbacks__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.feedbacks__left, .feedbacks__right {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.feedbacks .left__item, .feedbacks .right__item {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+}
+.feedbacks .left__text-block, .feedbacks .right__text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.feedbacks .left .block__text {
+  font-weight: 400;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.feedbacks .left .block__text--big {
+  font-size: 24px;
+  line-height: 135%;
+}
+.feedbacks .left .block__text--small {
+  font-size: 18px;
+  line-height: 130%;
+}
+.feedbacks .left .block__text--position {
+  font-size: 18px;
+  line-height: 130%;
+  color: #AD61FF;
+}
+.feedbacks .left .block__student {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.feedbacks .left .block__student-info {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.feedbacks .left .block__student-contact {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.05px;
+  text-decoration-line: underline;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #FF6D00;
+  transition: all 0.5s;
+}
+.feedbacks .left .block__student-contact:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+.feedbacks__right {
+  gap: 48px;
+}
+.feedbacks .right .block__text {
+  font-weight: 400;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.feedbacks .right .block__text--big {
+  font-size: 24px;
+  line-height: 135%;
+}
+.feedbacks .right .block__text--small {
+  font-size: 18px;
+  line-height: 130%;
+}
+.feedbacks .right .block__student {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.feedbacks .right .block__student-info {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.05px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000000;
+}
+.feedbacks .right .block__student-contact {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.05px;
+  text-decoration-line: underline;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #FF6D00;
+  transition: all 0.5s;
+}
+.feedbacks .right .block__student-contact:hover {
+  text-decoration: none;
   opacity: 0.5;
 }/*# sourceMappingURL=styles.css.map */
